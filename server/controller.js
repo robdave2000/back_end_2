@@ -40,12 +40,12 @@ module.exports =
         }
         else if (type === 'plus')
         {
-            house[index].price = houses[index].price + 10000;
+            houses[index].price = houses[index].price + 10000;
             res.status(200).send(houses)
         }
         else if (type === 'minus')
         {
-            house[index].price = houses[index].price - 10000;
+            houses[index].price = houses[index].price - 10000;
             res.status(200).send(houses)
         }
         else
